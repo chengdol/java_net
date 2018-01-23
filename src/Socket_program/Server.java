@@ -7,6 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 // server
+// cannot handle multiple request at the same time
 public class Server
 {
 	private Socket socket;
