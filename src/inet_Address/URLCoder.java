@@ -9,8 +9,8 @@ public class URLCoder
 {
 	public static void main(String[] args) throws UnsupportedEncodingException
 	{
-		// need to be encoded piece by piece
-		// otherwise will encode all special characters
+		// actually need to be encoded piece by piece
+		// otherwise will encode all special characters like this:
 		String res = URLEncoder.encode("https://www.google.com/search?hl=en&as_q=Java&as_epq=I/O", "UTF-8");
 		System.out.println(res);
 		
@@ -19,6 +19,7 @@ public class URLCoder
 				"search?hl=en&as_q=Java&as_epq=I%2FO";
 		String output = URLDecoder.decode(input, "UTF-8");
 		System.out.println(output);
+		
 	}
 	
 }
