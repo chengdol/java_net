@@ -31,7 +31,6 @@ public class Main
 						+ ":"
 						+ v.toString());
 			});
-			
 			// get content from server
 			System.out.println();
 			System.out.println("URL complete source code");
