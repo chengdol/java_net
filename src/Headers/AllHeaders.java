@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+// some get header info methods
 public class AllHeaders
 {
 	public static void main(String[] args)
