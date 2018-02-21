@@ -11,6 +11,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Date;
 
+// demonstrate isModifiedSince header field
 public class IsModifiedSince
 {
 	public static void main(String[] args)
