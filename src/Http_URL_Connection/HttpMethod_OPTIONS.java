@@ -19,6 +19,7 @@ public class HttpMethod_OPTIONS
 			// set options method
 			http.setRequestMethod("OPTIONS");
 			// print response header
+			// server only respond a header!
 			http.getHeaderFields().forEach((k, v) -> {
 				System.out.println(k + " : " + v);
 			});
