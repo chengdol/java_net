@@ -19,7 +19,7 @@ public class HttpMethod_HEAD
 		URL url;
 		try
 		{
-			url = new URL("http://www.baidu.com");
+			url = new URL("http://www.ibiblio.org/xml/");
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 			// set request method
 			// by default is the GET method
@@ -30,6 +30,7 @@ public class HttpMethod_HEAD
 			System.out.println();
 			System.out.println("response body: ");
 			
+			// print the body
 			try(Reader reader = new BufferedReader(
 					new InputStreamReader(
 							new BufferedInputStream(http.getInputStream()))))

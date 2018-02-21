@@ -20,6 +20,7 @@ public class IsModifiedSince
 		{
 			// 如何测试
 			// inspect source code, find img tag then use it;s link
+			// 有可能cahce已经不见了，要运行2次
 			URL url = new URL("https://images.pexels.com/photos/413195/pexels-photo-413195.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
 			URLConnection connection = url.openConnection();
 			
