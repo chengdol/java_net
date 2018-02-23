@@ -21,6 +21,10 @@ public class ErrorCondition
 			// default is GET method
 			HttpURLConnection http = (HttpURLConnection) url.openConnection();
 			
+			// whether using proxy server?
+			System.out.println("Using proxy: "
+					+ http.usingProxy());
+			
 			try(InputStream raw = http.getInputStream())
 			{
 				printFromStream(raw);

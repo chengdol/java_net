@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 // read URL by URLConnection
+// 这个并不是specific的, 没有用HttpURLConnection
 public class Main
 {
 	public static void main(String[] args)
