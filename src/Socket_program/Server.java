@@ -41,7 +41,8 @@ public class Server
 			// close connection
 			System.out.println("Server: connection closed!");
 			socket.close();
-			in.close();
+			// no need
+//			in.close();
 			
 		} catch (IOException e)
 		{

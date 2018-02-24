@@ -60,8 +60,9 @@ public class Client
 		{
 			// close
 			socket.close();
-			in.close();
-			out.close();
+			// no need
+//			in.close();
+//			out.close();
 		} catch (IOException e)
 		{
 			e.printStackTrace();
