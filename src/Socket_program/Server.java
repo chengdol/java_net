@@ -41,6 +41,7 @@ public class Server
 			// close connection
 			System.out.println("Server: connection closed!");
 			socket.close();
+			server.close();
 			// no need
 //			in.close();
 			
@@ -48,6 +49,7 @@ public class Server
 		{
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public static void main(String[] args)

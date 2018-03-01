@@ -15,8 +15,8 @@ public class DayTimeClient
 		// establish the connection
 		try(Socket socket = new Socket("time.nist.gov", 13))
 		{
-			// must set timeout!
-			socket.setSoTimeout(15000);
+			// must set timeout for read operation from input stream
+			socket.setSoTimeout(3000);
 			
 			// get input
 			// using ASCII encoding
@@ -31,6 +31,10 @@ public class DayTimeClient
 					sb.append((char) c);
 				}
 				System.out.println(sb.toString());
+			}
+			catch(IOException e)
+			{
+				System.out.println("socket time out!");
 			}
 			
 			

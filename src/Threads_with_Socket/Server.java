@@ -11,6 +11,7 @@ import java.util.Date;
 
 // server side
 // can handle multiple requests
+// 这个例子结构不太好，只是为了说明multi-threaded
 public class Server
 {
 	public static void main(String[] args) throws IOException
