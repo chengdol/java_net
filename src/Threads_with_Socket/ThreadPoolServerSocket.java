@@ -46,6 +46,7 @@ public class ThreadPoolServerSocket
 											socket.getOutputStream())))
 			{
 				Date current = new Date();
+				// log
 				auditLogger.info(current + " " + socket.getRemoteSocketAddress());
 				
 				// mimic processing time
@@ -64,6 +65,7 @@ public class ThreadPoolServerSocket
 			{
 				e.printStackTrace();
 			}	
+			// can use finally to close socket here
 			
 		}
 	}
