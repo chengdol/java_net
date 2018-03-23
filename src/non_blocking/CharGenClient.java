@@ -12,11 +12,11 @@ import java.nio.channels.WritableByteChannel;
 // this is a char generator client
 // receive char sequence from server when connected
 
-// this process will never terminate 
+// use Ctrl+c quit process
 public class CharGenClient
 {
 	
-	private final static int DEF_PORT = 19;
+	private final static int DEF_PORT = 2018;
 	
 	public static void main(String[] args)
 	{
