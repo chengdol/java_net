@@ -8,11 +8,13 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 // this server support tcp and udp on same port
-// 很难收到回复
+// 很难收到回复 如果 用官方的host
 public class DayTimeUDPClient
 {
-	private final static int PORT = 13;
-	private final static String HOST = "time.nist.gov";
+//	private final static int PORT = 13;
+	private final static int PORT = 2999;
+//	private final static String HOST = "time.nist.gov";
+	private final static String HOST = "localhost";
 	
 	public static void main(String[] args)
 	{
@@ -27,6 +29,7 @@ public class DayTimeUDPClient
 			DatagramPacket request = new DatagramPacket(new byte[1], 1, address, PORT);
 			DatagramPacket response = new DatagramPacket(new byte[1024], 1024);
 			// send and receive
+			// these are blocking calls
 			socket.send(request);
 			socket.receive(response);
 			
