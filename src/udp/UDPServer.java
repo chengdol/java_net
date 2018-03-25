@@ -13,7 +13,7 @@ public abstract class UDPServer implements Runnable
 {
 	private final int bufferSize;
 	private final int port;
-	private final Logger logger = Logger.getLogger(UDPServer.class.getCanonicalName());
+	protected final Logger logger = Logger.getLogger(UDPServer.class.getCanonicalName());
 	// volatile
 	private volatile boolean isShutDown = false;
 	
