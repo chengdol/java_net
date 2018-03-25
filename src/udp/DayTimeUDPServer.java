@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+// pair with DayTimeUDPClient
 public class DayTimeUDPServer
 {
 	private final static int PORT = 2999;

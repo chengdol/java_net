@@ -87,8 +87,9 @@ public class CharGenServer
 						// 如果都发送完了,则更新
 						if (!clientBuffer.hasRemaining())
 						{
-							// 找到起始
+							// pointer找到起始
 							clientBuffer.rewind();
+							// get 会move forward pointer a step
 							int first = clientBuffer.get();
 							// 再回起始
 							clientBuffer.rewind();
