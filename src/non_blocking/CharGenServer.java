@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+// this is a TCP channel
 public class CharGenServer
 {
 	public final static int DEF_PORT = 2018;

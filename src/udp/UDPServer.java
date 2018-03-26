@@ -32,6 +32,7 @@ public abstract class UDPServer implements Runnable
 	@Override
 	public void run()
 	{
+		System.out.println("Echo server: start...");
 		byte[] buffer = new byte[bufferSize];
 		try (DatagramSocket ds = new DatagramSocket(port))
 		{
